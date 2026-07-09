@@ -1,0 +1,130 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a1628;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+}
+
+.calculadora {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.inputs {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.campo {
+  display: grid;
+  gap: 0.4rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input {
+  padding: 0.85rem 1rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 0.6rem;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input::placeholder { color: rgba(255,255,255,0.3); }
+input:focus { border-color: #00d4ff; }
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  display: none;
+}
+
+button {
+  background: #00d4ff;
+  color: #0a1628;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 0.5rem;
+}
+
+button:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.resultados {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: none;
+}
+
+.resultados h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabla { display: grid; gap: 0.5rem; }
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.fila span { color: rgba(255,255,255,0.6); }
+
+.fila strong {
+  color: #00d4ff;
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 1rem;
+}
